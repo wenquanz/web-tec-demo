@@ -1,7 +1,7 @@
 this project is created using Maven Project wizard.
 the archetype is maven-archetype-webapp.
 eclipse version 4.4.2 with run jetty run(easy for testing)
-
+pushed to https://github.com/wenquanz/web-tec-demo
 
 ------------maven-archetype-webapp--------------------
 
@@ -11,3 +11,9 @@ eclipse version 4.4.2 with run jetty run(easy for testing)
 
 update 1
 servlet 3.1
+
+update 2
+add spring mvc
+see https://docs.spring.io/spring/docs/4.3.13.RELEASE/spring-framework-reference/htmlsingle/#spring-web
+
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 1 in XML document from ServletContext resource [/WEB-INF/demo-servlet-servlet.xml] is invalid
