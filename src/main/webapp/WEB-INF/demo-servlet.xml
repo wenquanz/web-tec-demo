@@ -15,6 +15,8 @@
            http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
            http://www.springframework.org/schema/mvc
            http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+           
+	<context:annotation-config/>
 
 	<context:component-scan base-package="controller" />
 
@@ -30,9 +32,15 @@
 
 	<!-- <mvc:view-controller path="/" view-name="home" /> -->
 
-	<!-- <mvc:view-resolvers> <mvc:content-negotiation> <mvc:default-views> 
-		<bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/> 
-		</mvc:default-views> </mvc:content-negotiation> <mvc:jsp/> </mvc:view-resolvers> -->
+	<!-- <mvc:view-resolvers>
+		<mvc:content-negotiation>
+			<mvc:default-views>
+				<bean
+					class="org.springframework.web.servlet.view.json.MappingJackson2JsonView" />
+			</mvc:default-views>
+		</mvc:content-negotiation>
+		<mvc:jsp />
+	</mvc:view-resolvers> -->
 
 	<!-- <mvc:resources mapping="/static/**" location="/static/" cache-period="31556926"/> -->
 
@@ -40,7 +48,11 @@
 		supplied location -->
 	<!-- <util:properties id="jdbcConfiguration" location="classpath:com/foo/jdbc-production.properties"/> -->
 
-	<!-- <bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean"> 
-		<property name="mediaTypes"> <value> json=application/json xml=application/xml 
-		</value> </property> </bean> -->
+	<!-- <bean id="contentNegotiationManager"
+		class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+		<property name="mediaTypes">
+			<value> json=application/json xml=application/xml
+			</value>
+		</property>
+	</bean> -->
 </beans>    

@@ -17,3 +17,14 @@ add spring mvc
 see https://docs.spring.io/spring/docs/4.3.13.RELEASE/spring-framework-reference/htmlsingle/#spring-web
 
 org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 1 in XML document from ServletContext resource [/WEB-INF/demo-servlet-servlet.xml] is invalid
+
+update 3
+get familiar with schema, DTDs
+http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+http://mybatis.org/dtd/mybatis-3-mapper.dtd
+
+update 4 
+spring mvc WebApplicationContext parent/child
+
+update 5 
+could not add ojdbc dependency with maven

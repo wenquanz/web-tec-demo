@@ -3,18 +3,14 @@ package controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class DemoController {
 	
 	@RequestMapping("/welcome")
-	public String welcome(Model model){
-		model.addAttribute("message", "welcome to demo");
+	public @ResponseBody String welcome(Model model){
 		return "welcome";
 	}
 
-	@RequestMapping("/welcome")
-	public String home(Model model){
-		return "home";
-	}
 }
