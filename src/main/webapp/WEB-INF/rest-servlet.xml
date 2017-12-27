@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+	       http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+           http://www.springframework.org/schema/tx 
+           http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-4.3.xsd
+           http://www.springframework.org/schema/aop 
+           http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+           http://www.springframework.org/schema/mvc
+           http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+           
+	<context:annotation-config/>
+
+	<context:component-scan base-package="restcontroller" />
+
+	<!-- enabling MVC XML Namespace default message converters -->
+	<!-- <context:annotation-config/> -->
+
+
+	<!-- <mvc:interceptors> <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" 
+		/> <mvc:interceptor> <mvc:mapping path="/**" /> <mvc:exclude-mapping path="/admin/**" 
+		/> <bean class="org.springframework.web.servlet.theme.ThemeChangeInterceptor" 
+		/> </mvc:interceptor> <mvc:interceptor> <mvc:mapping path="/secure/*"/> <bean 
+		class="org.example.SecurityInterceptor"/> </mvc:interceptor> </mvc:interceptors> -->
+
+	<!-- <mvc:view-controller path="/" view-name="home" /> -->
+
+	<!-- <mvc:view-resolvers>
+		<mvc:content-negotiation>
+			<mvc:default-views>
+				<bean
+					class="org.springframework.web.servlet.view.json.MappingJackson2JsonView" />
+			</mvc:default-views>
+		</mvc:content-negotiation>
+		<mvc:jsp />
+	</mvc:view-resolvers> -->
+
+	<!-- <mvc:resources mapping="/static/**" location="/static/" cache-period="31556926"/> -->
+
+	<!-- creates a java.util.Properties instance with values loaded from the 
+		supplied location -->
+	<!-- <util:properties id="jdbcConfiguration" location="classpath:com/foo/jdbc-production.properties"/> -->
+
+	<!-- <bean id="contentNegotiationManager"
+		class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+		<property name="mediaTypes">
+			<value> json=application/json xml=application/xml
+			</value>
+		</property>
+	</bean> -->
+</beans>    
