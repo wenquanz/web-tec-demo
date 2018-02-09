@@ -17,8 +17,12 @@
            http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
            
 	<context:annotation-config/>
+	
+	
 
 	<context:component-scan base-package="restcontroller" />
+	
+	<mvc:annotation-driven/>
 
 	<!-- enabling MVC XML Namespace default message converters -->
 	<!-- <context:annotation-config/> -->

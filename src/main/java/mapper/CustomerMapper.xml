@@ -7,8 +7,15 @@
 <resultMap type="mapper.CustomerMapper" id="customer">
 
 </resultMap>
+  <select id="list" resultType="model.Customer">
+    select customername,customercode from cim_customerinfo
+  </select>
 
   <select id="get" resultType="model.Customer">
+    select customername,customercode from cim_customerinfo where customercode = #{customercode}
+  </select>
+  
+  <select id="insert" resultType="model.Customer">
     select customername,customercode from cim_customerinfo where customercode = #{customercode}
   </select>
 </mapper>

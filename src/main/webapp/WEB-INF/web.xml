@@ -27,16 +27,16 @@
 		</init-param>
 	</filter>
 
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>demo</servlet-name>
-		<!-- using spring servlet -->
+		using spring servlet
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>demo</servlet-name>
-		<url-pattern>/*</url-pattern>
-	</servlet-mapping>
+		<url-pattern>/demo/*</url-pattern>
+	</servlet-mapping> -->
 	
 	<servlet>
 		<servlet-name>rest</servlet-name>

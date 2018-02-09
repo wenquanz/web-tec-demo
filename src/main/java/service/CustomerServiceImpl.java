@@ -1,5 +1,8 @@
 package service;
 
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +19,10 @@ public class CustomerServiceImpl implements CustomerService{
 		if(customercode == null || "".equals(customercode))
 			return null;
 		return customerMapper.get(customercode);
+	}
+
+	public List<Customer> list(Map<String,String> map) {
+		return customerMapper.list(map);
 	}
 
 }

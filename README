@@ -30,3 +30,10 @@ update 5
 could not add ojdbc dependency with maven
 
 // mybatis-spring using annotation like @Repository
+
+// create a seperate database
+
+//problem  using GetMapping/PostMapping with RestController,  use old RequestMapping
+fix: enable webmvc
+
+// try all request method
